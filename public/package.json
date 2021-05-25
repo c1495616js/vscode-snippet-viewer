@@ -4,7 +4,7 @@
   "description": "",
   "publisher": "jerryfw",
   "repository": "https://github.com/c1495616js/vscode-snippet-viewer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.56.0"
   },
@@ -15,39 +15,39 @@
     "snippets": [
       {
         "language": "javascript",
-        "path": "./snippets/common.json"
+        "path": "./api/common.json"
       },
       {
         "language": "typescript",
-        "path": "./snippets/common.json"
+        "path": "./api/common.json"
       },
       {
         "language": "javascriptreact",
-        "path": "./snippets/common.json"
+        "path": "./api/common.json"
       },
       {
         "language": "typescriptreact",
-        "path": "./snippets/common.json"
+        "path": "./api/common.json"
       },
       {
         "language": "typescript",
-        "path": "./snippets/nest.json"
+        "path": "./api/nest.json"
       },
       {
         "language": "javascript",
-        "path": "./snippets/react.json"
+        "path": "./api/react.json"
       },
       {
         "language": "typescript",
-        "path": "./snippets/react.json"
+        "path": "./api/react.json"
       },
       {
         "language": "javascriptreact",
-        "path": "./snippets/react.json"
+        "path": "./api/react.json"
       },
       {
         "language": "typescriptreact",
-        "path": "./snippets/react.json"
+        "path": "./api/react.json"
       }
     ]
   }
