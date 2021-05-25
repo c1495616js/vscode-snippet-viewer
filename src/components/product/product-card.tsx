@@ -22,12 +22,12 @@ const ProductCard: FC<ProductProps> = ({
   contactClassName = '',
   imageContentClassName = '',
   variant = 'list',
-  imgWidth = 340,
-  imgHeight = 440,
-  imgLoading,
+  // imgWidth = 340,
+  // imgHeight = 440,
+  // imgLoading,
 }) => {
   const { openModal, setModalView, setModalData } = useUI();
-  const placeholderImage = `/assets/placeholder/products/product-${variant}.svg`;
+  // const placeholderImage = `/assets/placeholder/products/product-${variant}.svg`;
 
   function handlePopupView() {
     setModalData({ data: product });

@@ -1,37 +1,37 @@
-import React from "react";
-import type { AppProps } from "next/app";
-import { useRouter } from "next/router";
-import Head from "next/head";
+import React from 'react';
+import type { AppProps } from 'next/app';
+import { useRouter } from 'next/router';
+import Head from 'next/head';
 
 // SEO
-import { DefaultSeo } from "next-seo";
-import { SEO } from "@settings/next-seo.config";
+import { DefaultSeo } from 'next-seo';
+import { SEO } from '@settings/next-seo.config';
 
 // React-Query
-import { QueryClient, QueryClientProvider } from "react-query";
-import { Hydrate } from "react-query/hydration";
-import { ReactQueryDevtools } from "react-query/devtools";
+import { QueryClient, QueryClientProvider } from 'react-query';
+import { Hydrate } from 'react-query/hydration';
+// import { ReactQueryDevtools } from "react-query/devtools";
 
 // Others
-import { AnimatePresence } from "framer-motion";
-import { ToastContainer } from "react-toastify";
+import { AnimatePresence } from 'framer-motion';
+import { ToastContainer } from 'react-toastify';
 
-import { ManagedUIContext } from "@contexts/ui.context";
-import ManagedModal from "@components/common/modal/managed-modal";
-import ManagedDrawer from "@components/common/drawer/managed-drawer";
+import { ManagedUIContext } from '@contexts/ui.context';
+import ManagedModal from '@components/common/modal/managed-modal';
+import ManagedDrawer from '@components/common/drawer/managed-drawer';
 
 // Load Open Sans and satisfy typeface font
-import "@fontsource/open-sans";
-import "@fontsource/open-sans/600.css";
-import "@fontsource/open-sans/700.css";
-import "@fontsource/satisfy";
+import '@fontsource/open-sans';
+import '@fontsource/open-sans/600.css';
+import '@fontsource/open-sans/700.css';
+import '@fontsource/satisfy';
 // external
-import "react-toastify/dist/ReactToastify.css";
+import 'react-toastify/dist/ReactToastify.css';
 // base css file
-import "@styles/tailwind.css";
+import '@styles/tailwind.css';
 
 function handleExitComplete() {
-  if (typeof window !== "undefined") {
+  if (typeof window !== 'undefined') {
     window.scrollTo({ top: 0 });
   }
 }
@@ -54,8 +54,8 @@ function CustomApp({ Component, pageProps }: AppProps) {
             <Layout pageProps={pageProps}>
               <Head>
                 <meta
-                  name="viewport"
-                  content="width=device-width, initial-scale=1 maximum-scale=1"
+                  name='viewport'
+                  content='width=device-width, initial-scale=1 maximum-scale=1'
                 />
               </Head>
               {/* meta viewport fix ios input zoom issue on focus */}

@@ -8,10 +8,10 @@ type PaginatedProduct = {
   paginatorInfo: any;
 };
 
-const fetchProducts = async ({ queryKey, pageParam }: any) => {
+const fetchProducts = async ({ queryKey }: any) => {
   const [_key, _params] = queryKey;
   const category = _params?.category;
-  console.log('cate:::', category);
+
   let categoryArr: any[] = [];
   if (category) {
     const cs = category.split(',');

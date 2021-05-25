@@ -1,11 +1,11 @@
 import Link from '@components/ui/link';
 import SearchIcon from '@components/icons/search-icon';
-import UserIcon from '@components/icons/user-icon';
+// import UserIcon from '@components/icons/user-icon';
 import MenuIcon from '@components/icons/menu-icon';
 import HomeIcon from '@components/icons/home-icon';
 import { useUI } from '@contexts/ui.context';
-import { ROUTES } from '@utils/routes';
-import dynamic from 'next/dynamic';
+// import { ROUTES } from '@utils/routes';
+// import dynamic from 'next/dynamic';
 import { Drawer } from '@components/common/drawer/drawer';
 
 const BottomNavigation: React.FC = () => {
@@ -15,14 +15,8 @@ const BottomNavigation: React.FC = () => {
     displaySidebar,
     setDrawerView,
     openSearch,
-    openModal,
-    setModalView,
   } = useUI();
 
-  function handleLogin() {
-    setModalView('LOGIN_VIEW');
-    return openModal();
-  }
   function handleMobileMenu() {
     setDrawerView('MOBILE_MENU');
     return openSidebar();

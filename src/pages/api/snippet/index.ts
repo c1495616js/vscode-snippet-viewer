@@ -4,7 +4,7 @@ import path from 'path';
 
 import { Category } from '@framework/types';
 
-export default (req: NextApiRequest, res: NextApiResponse) => {
+export default (_req: NextApiRequest, res: NextApiResponse) => {
   const snippetPath = path.resolve('public', 'api');
   const snippetsData = fs.readdirSync(snippetPath); // [xxx.json, yyy.json]
   const snippets: Category[] = snippetsData.map((sp) => {

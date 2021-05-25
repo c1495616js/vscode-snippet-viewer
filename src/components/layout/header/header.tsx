@@ -1,32 +1,28 @@
 import React, { useRef } from 'react';
 import SearchIcon from '@components/icons/search-icon';
-import { siteSettings } from '@settings/site-settings';
-import HeaderMenu from '@components/layout/header/header-menu';
+// import { siteSettings } from '@settings/site-settings';
+// import HeaderMenu from '@components/layout/header/header-menu';
 import Logo from '@components/ui/logo';
 import { useUI } from '@contexts/ui.context';
-import { ROUTES } from '@utils/routes';
+// import { ROUTES } from '@utils/routes';
 import { addActiveScroll } from '@utils/add-active-scroll';
-import dynamic from 'next/dynamic';
+// import dynamic from 'next/dynamic';
 
 type DivElementRef = React.MutableRefObject<HTMLDivElement>;
-const { site_header } = siteSettings;
+// const { site_header } = siteSettings;
 const Header: React.FC = () => {
   const {
     openSidebar,
     setDrawerView,
     openSearch,
-    openModal,
-    setModalView,
-    isAuthorized,
+    // openModal,
+    // setModalView,
+    // isAuthorized,
   } = useUI();
 
   const siteHeaderRef = useRef() as DivElementRef;
   addActiveScroll(siteHeaderRef);
 
-  function handleLogin() {
-    setModalView('LOGIN_VIEW');
-    return openModal();
-  }
   function handleMobileMenu() {
     setDrawerView('MOBILE_MENU');
     return openSidebar();
