@@ -1,0 +1,10 @@
+{
+  "import": {
+    "prefix": "imp",
+    "body": "import ${2:moduleName} from '${1:module}'$0"
+  },
+  "importNoModuleName": {
+    "prefix": "imn",
+    "body": "import '${1:module}'$0"
+  }
+}
