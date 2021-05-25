@@ -92,11 +92,11 @@ const ProductCard: FC<ProductProps> = ({
               variant === 'list',
           })}
         >
-          {product?.key}
+          {product?.prefix}
         </h2>
-        {product?.prefix && (
-          <p className='text-body text-xs lg:text-sm leading-normal xl:leading-relaxed max-w-[250px] truncate'>
-            {product?.prefix}
+        {product?.description && (
+          <p className='text-body text-xs lg:text-sm leading-normal xl:leading-relaxed max-w-[250px]'>
+            {product?.description}
           </p>
         )}
         <div

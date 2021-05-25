@@ -32,5 +32,11 @@
       ""
     ],
     "description": "Creates a React Functional Component with ES7 module system"
+  },
+  "Material-UI React FunctionComponent": {
+    "scope": "typescript, typescriptreact",
+    "prefix": "mrfc",
+    "body": "import React, { FunctionComponent } from 'react';\nimport { makeStyles } from '@material-ui/core';\nconst useStyles = makeStyles((theme: any) => ({}));\n\ninterface IProps {}\n\nexport const ${1:${TM_FILENAME_BASE}} :FunctionComponent<IProps> = () => {\n\tconst classes = useStyles();\n\treturn <div></div>;\n};",
+    "description": "Material-UI React FunctionComponent"
   }
 }

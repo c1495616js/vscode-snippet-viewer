@@ -51,6 +51,7 @@ export type Product = {
   body: string[];
   key: string;
   prefix: string;
+  description: string;
   [key: string]: unknown;
 };
 export type OrderItem = {
